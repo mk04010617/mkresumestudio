@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MK Assignment Hub — Fast, Reliable Assignment & Project Help</title>
+  <meta name="description" content="MK Assignment Hub — Assignment writing assistance, project reports, PPTs, coding help and proofreading. Fast turnaround and affordable pricing." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0f62fe;--muted:#5b6b7a;--bg:#f7fbff;--card:#ffffff;--radius:12px;font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:#07203a;line-height:1.45}
+    .wrap{max-width:1000px;margin:0 auto;padding:28px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    .logo{display:flex;gap:12px;align-items:center}
+    .mark{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6d28d9);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+    nav{display:flex;gap:14px}
+    a.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    a.link{color:var(--muted);text-decoration:none}
+    .hero{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:22px;align-items:center}
+    h1{margin:0;font-size:26px}
+    p.lead{color:var(--muted);margin:8px 0 18px}
+    .card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 8px 20px rgba(6,25,47,0.06)}
+    .features{display:flex;gap:12px;margin:16px 0}
+    .feature{flex:1;padding:10px}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+    .service{background:var(--card);padding:12px;border-radius:10px}
+    .pricing{display:flex;gap:12px;margin-top:18px}
+    .plan{flex:1;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(15,98,254,0.04),#fff);border:1px solid rgba(15,98,254,0.06)}
+    .samples{display:flex;gap:12px;margin-top:14px}
+    .sample{flex:1;padding:12px;border-radius:10px;border:1px dashed #e6eefb;background:#fff}
+    .contact{display:grid;grid-template-columns:1fr 340px;gap:18px;margin-top:18px}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e9f1ff;background:#fff}
+    button.primary{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:0;font-weight:700}
+    footer{margin-top:24px;color:var(--muted);font-size:13px;border-top:1px solid #eef6ff;padding-top:14px}
+    @media(max-width:900px){.hero,.contact{grid-template-columns:1fr}.services{grid-template-columns:1fr}.pricing{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="mark">MK</div>
+        <div>
+          <div style="font-weight:700">MK Assignment Hub</div>
+          <div style="color:var(--muted);font-size:13px">Trusted assignment support & project help</div>
+        </div>
+      </div>
+      <nav>
+        <a class="link" href="#services">Services</a>
+        <a class="link" href="#pricing">Pricing</a>
+        <a class="link" href="#contact">Contact</a>
+        <a class="btn" href="#contact">Order Now</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Fast, reliable assignment & project help — delivered with quality</h1>
+        <p class="lead">Need help with assignments, reports, presentations or coding tasks? We provide clear, original, and well-formatted study support and tutoring to help you learn and submit with confidence.</p>
+
+        <div class="features">
+          <div class="card feature">
+            <strong>Quick Turnaround</strong>
+            <div style="color:var(--muted);font-size:14px">Get basic tasks done within 24 hours.</div>
+          </div>
+          <div class="card feature">
+            <strong>Affordable Pricing</strong>
+            <div style="color:var(--muted);font-size:14px">Packages for students with clear rates.</div>
+          </div>
+        </div>
+
+        <div id="services">
+          <h3>What we offer</h3>
+          <div class="services">
+            <div class="service card"><strong>Assignment Writing (Study Aid)</strong><div style="color:var(--muted);font-size:14px">Guidance, structure, examples and references. (No plagiarism)</div></div>
+            <div class="service card"><strong>Project Reports</strong><div style="color:var(--muted);font-size:14px">Complete reports with diagrams, tables and formatting.</div></div>
+            <div class="service card"><strong>PowerPoint & Presentations</strong><div style="color:var(--muted);font-size:14px">Slides, speaker notes, and design-ready PPTX files.</div></div>
+            <div class="service card"><strong>Coding Help & Debugging</strong><div style="color:var(--muted);font-size:14px">Problem-solving, code review and sample solutions.</div></div>
+            <div class="service card"><strong>Proofreading & Formatting</strong><div style="color:var(--muted);font-size:14px">Grammar, citations, referencing (APA/IEEE/MLA).</div></div>
+            <div class="service card"><strong>One-on-One Tutoring</strong><div style="color:var(--muted);font-size:14px">Explain concepts so you can submit your work confidently.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Quick Order</h3>
+        <div style="display:flex;justify-content:space-between"><div>Basic Assignment</div><div style="font-weight:700">₹199</div></div>
+        <ul style="color:var(--muted);padding-left:18px;margin-top:10px">
+          <li>Up to 500 words</li>
+          <li>24-hour delivery</li>
+          <li>1 revision</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;gap:8px">
+          <a class="btn" href="#contact">Order via WhatsApp</a>
+          <a class="link" href="#pricing">View Pricing</a>
+        </div>
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">Note: We provide study support and guidance. All work is original and meant to be used as reference.</div>
+      </aside>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing">
+        <div class="plan card"><h4>Starter</h4><div style="font-weight:700">₹199</div><div style="color:var(--muted);font-size:13px">Short assignment / 24 hours / 1 revision</div></div>
+        <div class="plan card"><h4>Standard</h4><div style="font-weight:700">₹399</div><div style="color:var(--muted);font-size:13px">Up to 1500 words or moderate project / 2 days / 2 revisions</div></div>
+        <div class="plan card"><h4>Premium</h4><div style="font-weight:700">₹799</div><div style="color:var(--muted);font-size:13px">Detailed report, code support or PPT / 3–5 days / unlimited revisions (7 days)</div></div>
+      </div>
+    </section>
+
+    <section class="samples">
+      <h2>Samples & Testimonials</h2>
+      <div class="samples">
+        <div class="sample">
+          <strong>Sample — Report Layout</strong>
+          <div style="color:var(--muted);font-size:13px;margin-top:8px">Well-structured report with headings, table of contents, and references.</div>
+        </div>
+        <div class="sample">
+          <strong>Sample — PPT</strong>
+          <div style="color:var(--muted);font-size:13px;margin-top:8px">Slide set with visuals and speaker notes.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="card">
+        <h3 style="margin-top:0">Place Your Order / Contact</h3>
+        <form onsubmit="return submitOrder(event)">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="email" id="email" placeholder="Email address" required />
+          <select id="serviceType"><option>Assignment — Study Aid</option><option>Project Report</option><option>Presentation (PPT)</option><option>Coding Help</option><option>Proofreading</option><option>Tutoring</option></select>
+          <label style="font-size:13px;color:var(--muted)">Upload file (optional)</label>
+          <input type="file" id="file" />
+          <textarea id="details" rows="5" placeholder="Explain your requirement, deadline, and any reference material" required></textarea>
+          <label style="font-size:13px;color:var(--muted)"><input type="checkbox" id="honesty" required /> I confirm this request is for study aid and will not be submitted as someone else's original work.</label>
+          <div style="display:flex;gap:10px;margin-top:10px">
+            <button class="primary" type="submit">Send Request</button>
+            <a class="btn" href="https://wa.me/919999999999?text=Hello%20MK%20Assignment%20Hub%2C%20I%20want%20help" target="_blank">WhatsApp</a>
+          </div>
+          <div style="color:var(--muted);font-size:13px;margin-top:8px">Payments: UPI / GPay / Paytm / PayPal.</div>
+        </form>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Contact Details & FAQ</h3>
+        <p style="color:var(--muted);font-size:13px">Email: mkassignmenthub@example.com</p>
+        <p style="color:var(--muted);font-size:13px">WhatsApp: +91 99999 99999</p>
+        <h4 style="margin-bottom:6px">How it works</h4>
+        <ol style="color:var(--muted);font-size:13px">
+          <li>Send your brief and deadline.</li>
+          <li>We confirm scope & send invoice.</li>
+          <li>We deliver the draft; you request revisions.</li>
+        </ol>
+        <h4 style="margin-top:8px">Academic honesty</h4>
+        <p style="color:var(--muted);font-size:13px">Our services are study aids: we provide original, referenced material and tutoring. Do not use our work to violate your institution's rules.</p>
+      </aside>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>© 2025 MK Assignment Hub</div>
+        <div style="color:var(--muted);font-size:13px">Privacy · Terms · Contact</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function submitOrder(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const service=document.getElementById('serviceType').value;
+      const details=document.getElementById('details').value.trim();
+      const honesty=document.getElementById('honesty').checked;
+      if(!honesty){alert('Please confirm the checkbox about study-aid usage.');return false}
+      const waMessage = encodeURIComponent(`Hello MK Assignment Hub,\nName: ${name}\nEmail: ${email}\nService: ${service}\nDetails: ${details}`);
+      if(confirm('Send request via WhatsApp for faster response? Click Cancel to email instead.')){
+        window.open('https://wa.me/919999999999?text='+waMessage,'_blank');
+        return false;
+      }
+      const subject=encodeURIComponent('MK Assignment Hub - Order Request');
+      const body=encodeURIComponent(`Name: ${name}\nEmail: ${email}\nService: ${service}\nDetails:\n${details}`);
+      window.location.href = `mailto:mkassignmenthub@example.com?subject=${subject}&body=${body}`;
+      return false;
+    }
+  </script>
+</body>
+</html>
