@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MK Resume Studio — ATS-Friendly Resume Writing</title>
+  <meta name="description" content="MK Resume Studio — Professional ATS-friendly resumes for freshers and professionals. Fast delivery, affordable pricing." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0f62fe; /* blue */
+      --muted:#6b7280;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --radius:14px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+    .container{max-width:1000px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6d28d9);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav{display:flex;gap:18px;align-items:center}
+    a.btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    a.link{color:var(--muted);text-decoration:none}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin:28px 0}
+    .hero h1{font-size:28px;margin:0 0 10px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(15,23,42,0.06)}
+
+    /* Features */
+    .features{display:flex;gap:16px;margin:18px 0}
+    .feature{flex:1;padding:12px}
+    .feature h4{margin:8px 0 4px}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* Services */
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:22px 0}
+    .service{background:var(--card);padding:14px;border-radius:12px}
+
+    /* Pricing */
+    .pricing{display:flex;gap:14px;margin:22px 0}
+    .plan{flex:1;padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(15,98,254,0.05), rgba(15,98,254,0.02));border:1px solid rgba(15,98,254,0.06)}
+    .price{font-size:22px;font-weight:700}
+
+    /* Samples */
+    .samples{display:flex;gap:12px}
+    .sample{flex:1;padding:16px;border-radius:10px;border:1px dashed #e6eefb;background:linear-gradient(180deg,#fff, #fcfdff)}
+    .blur{filter:blur(2px);opacity:0.9}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:18px;margin:22px 0}
+    form{display:grid;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6eefb;background:#fff}
+    button.primary{background:var(--accent);color:#fff;padding:10px;border-radius:10px;border:0;font-weight:600}
+
+    footer{margin:28px 0;padding:18px 0;color:var(--muted);font-size:14px;border-top:1px solid #eef2ff}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero, .contact-grid{grid-template-columns:1fr}
+      .services{grid-template-columns:1fr}
+      .pricing{flex-direction:column}
+      .container{padding:18px}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">MK</div>
+        <div>
+          <div style="font-weight:700">MK Resume Studio</div>
+          <div class="muted" style="font-size:13px">ATS-friendly resumes · Fast delivery</div>
+        </div>
+      </div>
+      <nav>
+        <a class="link" href="#services">Services</a>
+        <a class="link" href="#pricing">Pricing</a>
+        <a class="link" href="#samples">Samples</a>
+        <a class="btn" href="#contact">Order Now</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Stand out with a professional ATS-friendly resume</h1>
+        <p>We craft resumes that pass Applicant Tracking Systems and get noticed by hiring managers. Perfect for freshers and experienced professionals.</p>
+        <div class="features">
+          <div class="feature card">
+            <strong>ATS Optimized</strong>
+            <div class="muted">Keyword & formatting tailored to job role.</div>
+          </div>
+          <div class="feature card">
+            <strong>Fast Delivery</strong>
+            <div class="muted">1–2 day turnaround for most packages.</div>
+          </div>
+        </div>
+        <div class="cta">
+          <a class="btn" href="#contact">Get Started</a>
+          <a class="link" href="#samples">See Samples</a>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Order Summary</h3>
+        <div style="display:flex;justify-content:space-between;margin-top:10px"><div>Professional Resume</div><div class="price">₹499</div></div>
+        <ul class="muted" style="margin-top:12px;padding-left:18px">
+          <li>1–2 pages</li>
+          <li>Editable Word + PDF</li>
+          <li>Keyword optimization</li>
+        </ul>
+        <div style="margin-top:14px;display:flex;gap:8px">
+          <a class="btn" href="#contact">Order via WhatsApp</a>
+          <a class="link" href="#pricing">View Plans</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service card">
+          <h4>Freshers Resume</h4>
+          <div class="muted">Focus on skills, academics, internships and projects to get noticed for entry-level roles.</div>
+        </div>
+        <div class="service card">
+          <h4>Professional Resume</h4>
+          <div class="muted">Showcase experience, achievements and metrics with ATS-ready formatting.</div>
+        </div>
+        <div class="service card">
+          <h4>Cover Letter</h4>
+          <div class="muted">Tailored cover letters written for specific roles or companies.</div>
+        </div>
+        <div class="service card">
+          <h4>LinkedIn Optimization</h4>
+          <div class="muted">Profile headline, summary and job descriptions optimized for recruiters.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing">
+        <div class="plan card">
+          <h3>Basic Resume</h3>
+          <div class="price">₹299</div>
+          <p class="muted">1-page ATS compatible resume. PDF delivery.</p>
+          <ul class="muted" style="padding-left:18px">
+            <li>Editable template</li>
+            <li>1 revision</li>
+          </ul>
+        </div>
+        <div class="plan card">
+          <h3>Professional Resume</h3>
+          <div class="price">₹499</div>
+          <p class="muted">1–2 page ATS-ready resume. Word + PDF.</p>
+          <ul class="muted" style="padding-left:18px">
+            <li>Keyword optimization</li>
+            <li>2 revisions</li>
+          </ul>
+        </div>
+        <div class="plan card">
+          <h3>Premium Package</h3>
+          <div class="price">₹699</div>
+          <p class="muted">Resume + Cover Letter + LinkedIn Optimization.</p>
+          <ul class="muted" style="padding-left:18px">
+            <li>Priority delivery</li>
+            <li>Unlimited edits for 7 days</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="samples">
+      <h2>Samples</h2>
+      <div class="samples">
+        <div class="sample">
+          <div style="font-weight:700">Sample — Freshers (blurred)</div>
+          <div class="muted">Real sample available after inquiry. We protect client privacy.</div>
+          <div style="height:120px;margin-top:8px;background:linear-gradient(90deg,#eef6ff,#ffffff);border-radius:8px;display:flex;align-items:center;justify-content:center" class="blur">RESUME SAMPLE PREVIEW</div>
+        </div>
+        <div class="sample">
+          <div style="font-weight:700">Sample — Professional (blurred)</div>
+          <div class="muted">Format optimized for ATS parsing.</div>
+          <div style="height:120px;margin-top:8px;background:linear-gradient(90deg,#fff7f0,#ffffff);border-radius:8px;display:flex;align-items:center;justify-content:center" class="blur">RESUME SAMPLE PREVIEW</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact & Order</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <h3 style="margin-top:0">Send your requirements</h3>
+          <form action="mailto:mkresumestudio@example.com" method="post" enctype="text/plain" onsubmit="return submitForm(event)">
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <input type="email" id="email" name="email" placeholder="Email address" required />
+            <select id="service" name="service">
+              <option>Professional Resume — ₹499</option>
+              <option>Basic Resume — ₹299</option>
+              <option>Premium Package — ₹699</option>
+              <option>Cover Letter</option>
+              <option>LinkedIn Optimization</option>
+            </select>
+            <label class="muted">Upload old resume (optional)</label>
+            <input type="file" id="resumeFile" name="resumeFile" />
+            <textarea id="notes" name="notes" rows="4" placeholder="Add any job links, current CV text or notes"></textarea>
+            <div style="display:flex;gap:10px;align-items:center">
+              <button class="primary" type="submit">Send Request (Email)</button>
+              <a class="btn" href="https://wa.me/919999999999?text=Hello%20MK%20Resume%20Studio%2C%20I%20want%20a%20Professional%20Resume" target="_blank">WhatsApp</a>
+            </div>
+            <div class="muted" style="margin-top:8px">Payments accepted: UPI / Google Pay / Paytm / PayPal.</div>
+          </form>
+        </div>
+
+        <aside class="card">
+          <h3 style="margin-top:0">Other ways to reach us</h3>
+          <p class="muted">Email: mkresumestudio@example.com</p>
+          <p class="muted">WhatsApp: +91 99999 99999</p>
+
+          <h4>How it works</h4>
+          <ol class="muted">
+            <li>Send your details or upload current CV.</li>
+            <li>We draft & send the first version in 24–48 hours.</li>
+            <li>You request edits — we refine until satisfied.</li>
+          </ol>
+
+          <h4>Refund policy</h4>
+          <p class="muted">Full refund if draft not delivered in 72 hours (unless delayed by client).</p>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© 2025 MK Resume Studio</div>
+        <div class="muted">Privacy Policy · Terms · Contact</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function submitForm(e){
+      // fallback: mailto with form data (file upload won't attach in mailto)
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const service=document.getElementById('service').value;
+      const notes=document.getElementById('notes').value.trim();
+      const waMessage = encodeURIComponent(`Hello MK Resume Studio,\nName: ${name}\nEmail: ${email}\nService: ${service}\nNotes: ${notes}`);
+      // Open WhatsApp prefill as primary ordering method for faster contact
+      const waUrl = `https://wa.me/919999999999?text=${waMessage}`;
+      if(confirm('Send request via WhatsApp for faster response? Click Cancel to send via your email client.')){
+        window.open(waUrl,'_blank');
+        return false;
+      }
+      // otherwise open mailto
+      const subject = encodeURIComponent('MK Resume Studio - Order Request');
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nService: ${service}\nNotes:\n${notes}`);
+      window.location.href = `mailto:mkresumestudio@example.com?subject=${subject}&body=${body}`;
+      return false;
+    }
+  </script>
+</body>
+</html>
